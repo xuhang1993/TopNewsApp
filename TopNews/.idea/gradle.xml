@@ -10,12 +10,20 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appbaseui" />
+            <option value="$PROJECT_DIR$/appcommonutils" />
+            <option value="$PROJECT_DIR$/appframwork" />
+            <option value="$PROJECT_DIR$/appinterface" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appbaseui" />
+            <option value="$PROJECT_DIR$/appcommonutils" />
+            <option value="$PROJECT_DIR$/appframwork" />
+            <option value="$PROJECT_DIR$/appinterface" />
           </set>
         </option>
       </GradleProjectSettings>
