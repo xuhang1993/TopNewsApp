@@ -2,18 +2,51 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xu.topnews">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
     <application
+        android:name=".app.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/BaseAppTheme">
+        <activity
+            android:name=".module.splash.SplashActivity"
+            android:theme="@style/NoTitle_FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.ui.activity.MainActivity"
+            android:theme="@style/BaseAppTheme"></activity>
+        <activity
+            android:name=".module.guide.GuideActivity"
+            android:theme="@style/NoTitle_FullScreen" />
+        <activity
+            android:name=".module.login.LoginActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".module.newsdetail.ui.activity.NewsDetailActivity"
+            android:theme="@style/BaseAppTheme" />
+
+        <!-- Glide -->
+        <meta-data
+            android:name="com.xu.appframwork.glide.XuBaseGlideCache"
+            android:value="GlideModule"></meta-data>
+
+        <activity android:name=".module.web.WebActivity"
+            android:theme="@style/BaseAppTheme">
+
         </activity>
     </application>
 

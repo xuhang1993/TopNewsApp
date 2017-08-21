@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TopNews</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_mvc">MvcActivity</string>
+</resources>

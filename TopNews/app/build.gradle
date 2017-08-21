@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.xu.topnews"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -17,10 +17,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-}
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':appinterface')
+    compile project(':appframwork')
+    compile project(':appbaseui')
+    compile project(':appcommonutils')
+    /*butterknife*/
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+   }

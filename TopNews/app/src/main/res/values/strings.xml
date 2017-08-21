@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">TopNews</string>
+    <string name="app_name">头条新闻</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--base-->
+    <string name="app_base_confirm">确定</string>
+    <string name="app_base_cancel">取消</string>
+
+    <!-- navigationbar-->
+    <string name="app_navigationbar_news">头条</string>
+    <string name="app_navigationbar_video">视频</string>
+    <string name="app_navigationbar_picture">图片</string>
+    <string name="app_navigationbar_me">我</string>
+
+    <!--news-->
+    <string name="app_news_comments">跟帖</string>
+    <string name="app_news_load_all">我是有底线的</string>
+
+    <!--splashactivity-->
+    <string name="app_splash_requestpermissions_title">在设置-应用-头条新闻-权限中开启存储权限，以正常使用数据缓存和文件缓存等功能。</string>
+
+    <!-- MainActivity-->
+    <string name="app_mainactivity_title">今日要闻</string>
+    <string name="app_mainactivity_video_title">视频</string>
+    <string name="app_mainactivity_picture_title">图片</string>
+    <string name="app_mainactivity_person_title">我</string>
+
 </resources>

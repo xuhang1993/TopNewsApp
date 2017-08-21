@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.splash.SplashActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_splash_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.xu.appbaseui.countdowncircularprogressbar.CircleTextProgressbar
+            android:id="@+id/circularprogressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:textSize="10sp"
+            android:text="@string/baseui_splash_skip"
+            android:textColor="@color/baseui_circularprogress_text_color"
+            app:in_circle_color="@color/baseui_circularprogress_bag_color"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

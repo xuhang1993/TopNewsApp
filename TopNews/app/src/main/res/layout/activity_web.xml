@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:xu="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xu.topnews.module.web.WebActivity">
+
+    <com.xu.appbaseui.topnavigationbar.XuBaseTopNavigationBar
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xu:left_type="image"
+        xu:leftImage="@drawable/default_close_page"
+        >
+    </com.xu.appbaseui.topnavigationbar.XuBaseTopNavigationBar>
+
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_view"
+        ></WebView>
+
+
+</RelativeLayout>

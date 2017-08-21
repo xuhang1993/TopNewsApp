@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:xu="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xu.topnews.module.newsdetail.ui.activity.NewsDetailActivity">
+
+    <com.xu.appbaseui.topnavigationbar.XuBaseTopNavigationBar
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xu:left_type="textwithimage"
+        xu:leftText="返回"
+        xu:leftImage="@drawable/base_navigation_left_back"
+        ></com.xu.appbaseui.topnavigationbar.XuBaseTopNavigationBar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_view"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_newsdetail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:padding="17dp"
+                android:textColor="@color/baseui_text_color"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="17dp"
+                android:layout_marginLeft="17dp"
+                >
+                <TextView
+                    android:id="@+id/tv_newsdetail_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/baseui_second_text_color"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_newsdetail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/baseui_second_text_color"
+                    android:layout_marginLeft="17dp"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_newsdetail_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:visibility="gone"
+                android:layout_marginTop="17dp"
+                />
+
+            <com.xu.appbaseui.videoplayer.BaseUIVideoPlayerStandard
+                android:id="@+id/vp_newsdetail_player"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:visibility="gone"
+                android:layout_marginTop="17dp"
+                />
+
+            <TextView
+                android:id="@+id/news_content_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:textColor="@color/baseui_text_color"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="17dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.xu.appbaseui.loadingview.XuBaseUILoadingView
+        android:id="@+id/news_content_loadingview"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>
