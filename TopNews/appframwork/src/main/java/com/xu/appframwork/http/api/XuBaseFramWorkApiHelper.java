@@ -58,9 +58,8 @@ public class XuBaseFramWorkApiHelper {
             synchronized (XuBaseFramWorkApiHelper.class){
                 if (mRetrofit == null){
                        /*获取retrofi对象*/
-                    Gson gson = new GsonBuilder()
-                            .setLenient()
-                            .create();
+                    GsonBuilder gsonBuilder = new GsonBuilder();
+                    Gson gson = gsonBuilder.setLenient().create();
                     mRetrofit = new Retrofit.Builder()
                             .baseUrl(XuBaseFramWorkConfig.getInstance().getBaseUrl())
                             .client(getHttpClient())

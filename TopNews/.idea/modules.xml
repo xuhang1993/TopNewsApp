@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/appcommonutils/appcommonutils.iml" filepath="$PROJECT_DIR$/appcommonutils/appcommonutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/appframwork/appframwork.iml" filepath="$PROJECT_DIR$/appframwork/appframwork.iml" />
       <module fileurl="file://$PROJECT_DIR$/appinterface/appinterface.iml" filepath="$PROJECT_DIR$/appinterface/appinterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appthird/appthird.iml" filepath="$PROJECT_DIR$/appthird/appthird.iml" />
     </modules>
   </component>
 </project>

@@ -12,13 +12,17 @@ android {
         versionName "1.0"
     }
     buildTypes {
-        release {
+        release {//混淆 FALSE为不混淆 TRUE为混淆 proguard-rules.pro处理第三方库的混淆
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     dataBinding {
         enabled = true
+    }
+    //删除重复META-INF信息 否则运行app出错
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
     }
 }
 
@@ -28,8 +32,8 @@ dependencies {
     compile project(':appframwork')
     compile project(':appbaseui')
     compile project(':appcommonutils')
+    compile project(':appthird')
     /*butterknife*/
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-   }
+}

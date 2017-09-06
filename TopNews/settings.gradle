@@ -1,1 +1,1 @@
-include ':app', ':appframwork', ':appinterface', ':appbaseui', ':appcommonutils'
+include ':app', ':appframwork', ':appinterface', ':appbaseui', ':appcommonutils', ':appthird'

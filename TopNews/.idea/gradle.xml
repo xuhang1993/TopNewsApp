@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/appcommonutils" />
             <option value="$PROJECT_DIR$/appframwork" />
             <option value="$PROJECT_DIR$/appinterface" />
+            <option value="$PROJECT_DIR$/appthird" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

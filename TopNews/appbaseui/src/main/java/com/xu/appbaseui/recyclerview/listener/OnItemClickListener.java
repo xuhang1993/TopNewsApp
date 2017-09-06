@@ -17,6 +17,6 @@ public interface OnItemClickListener {
     /**
      * item点击
      */
-    void itemClickLinstener(View view,int positon);
+    void itemClickLinstener(View view, int positon);
 
 }

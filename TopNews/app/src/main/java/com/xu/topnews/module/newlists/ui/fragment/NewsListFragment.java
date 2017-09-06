@@ -1,8 +1,10 @@
 package com.xu.topnews.module.newlists.ui.fragment;
 
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -70,10 +72,11 @@ public class NewsListFragment extends XuBaseListFragment implements INewsListFra
             @Override
             public void itemClickLinstener(View view, int positon) {
                 XuTopNewsApiListModel apiListModel =  mTopNewsLists.get(positon);
-
                 Intent intent = new Intent(getActivity(), NewsDetailActivity.class);
                 intent.putExtra("postId", apiListModel.postid);
-                startActivityForResult(intent, XuConstant.NEWS_LIST_TO_DETAIL_REQUESTCODE);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(getActivity(), view, "thum_image").toBundle());
+                }
             }
         });
     }
