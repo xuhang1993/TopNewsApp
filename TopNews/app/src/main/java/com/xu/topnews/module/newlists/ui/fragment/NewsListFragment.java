@@ -5,6 +5,8 @@ import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -48,12 +50,32 @@ public class NewsListFragment extends XuBaseListFragment implements INewsListFra
     private List<XuTopNewsApiListModel> mTopNewsLists;
     private NewsListPresenterImpl mPersenter;
     private int mIndex;
+    private String mNewsType;
+    private String mNewsId;
+
 
     @BindString(R.string.app_news_load_all)
     String mNewsLoadAll;
 
     @BindString(R.string.app_news_comments)
     String mNewsComments;
+
+
+    public static NewsListFragment newInstance(String type, String id) {
+        Bundle args = new Bundle();
+        args.putString("type", type);
+        args.putString("id", id);
+        NewsListFragment fragment = new NewsListFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mNewsType = getArguments().getString("type");
+        mNewsId = getArguments().getString("id");
+    }
 
     @Override
     protected void iniView(View mView) {
@@ -85,13 +107,13 @@ public class NewsListFragment extends XuBaseListFragment implements INewsListFra
     protected void loadDataList() {
         mIsLoad = true;
         mIndex = 0;
-        mPersenter.loadNewsList(mIndex,XuConstant.ROWS_COUNT);
+        mPersenter.loadNewsList(mNewsType, mNewsId, mIndex,XuConstant.ROWS_COUNT);
     }
 
     @Override
     protected void loadMoreDataList() {
         mIndex += XuConstant.PAGEINDEX_SIZE;
-        mPersenter.loadNewsList(mIndex,XuConstant.ROWS_COUNT);
+        mPersenter.loadNewsList(mNewsType, mNewsId, mIndex,XuConstant.ROWS_COUNT);
     }
 
     @Override

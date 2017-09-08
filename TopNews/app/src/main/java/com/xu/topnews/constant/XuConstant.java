@@ -31,5 +31,9 @@ public class XuConstant {
      * 新闻列表到新闻详情请求码
      */
     public final static int NEWS_LIST_TO_DETAIL_REQUESTCODE = 9001;
+    /**
+     * 接口名称
+     */
+    public final static String NEWS_HEAD_LINE = "headline";
 
 }

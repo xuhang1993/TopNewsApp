@@ -15,6 +15,9 @@
     <color name="baseui_text_white_color">#ffffff</color>
     <color name="baseui_load_again_text_color">#FF0000</color>
     <color name="baseui_second_text_color">#666666</color>
+    <color name="baseui_select_text_color">#f73c00</color>
+    <color name="baseui_line_start_color">#ffc125</color>
+    <color name="baseui_line_end_color">#ff4500</color>
 
     <!-- navigationBarColor-->
     <color name="baseui_navigationBar_color">#f73c00</color>

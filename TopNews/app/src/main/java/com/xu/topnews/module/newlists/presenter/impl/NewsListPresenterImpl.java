@@ -25,11 +25,10 @@ public class NewsListPresenterImpl implements INewsListPersenter{
         mListView = listView;
         mListModel = new NewsListModelImpl();
     }
-
     @Override
-    public void loadNewsList(int index, int rowsCount) {
+    public void loadNewsList(String type, String id, int index, int rowsCount) {
         mListView.showProgress();
-        mListModel.loadDataList(index, rowsCount, new OnLoadDataListener() {
+        mListModel.loadDataList(type, id, index, rowsCount, new OnLoadDataListener() {
             @Override
             public void loadSuccess(Object o) {
                 mListView.loadDataSuccess(o);
@@ -42,6 +41,5 @@ public class NewsListPresenterImpl implements INewsListPersenter{
                 mListView.hideProgress();
             }
         });
-
     }
 }

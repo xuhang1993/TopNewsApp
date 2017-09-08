@@ -14,6 +14,6 @@ import com.xu.topnews.module.OnLoadDataListener;
 
 public interface INewsListModel {
 
-    void loadDataList(final int index, final int rowsCount, final OnLoadDataListener listener);
+    void loadDataList(final String type, String id, final int index, final int rowsCount, final OnLoadDataListener listener);
 
 }

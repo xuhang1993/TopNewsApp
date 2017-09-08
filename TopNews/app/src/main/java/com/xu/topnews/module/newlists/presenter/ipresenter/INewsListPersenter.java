@@ -12,6 +12,6 @@ package com.xu.topnews.module.newlists.presenter.ipresenter;
 
 public interface INewsListPersenter {
 
-    void loadNewsList(final int index, final int rowsCount);
+    void loadNewsList(final String type, final String id, final int index, final int rowsCount);
 
 }

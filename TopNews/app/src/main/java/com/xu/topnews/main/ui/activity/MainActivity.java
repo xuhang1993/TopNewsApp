@@ -13,7 +13,7 @@ import com.xu.topnews.R;
 import com.xu.topnews.main.presenter.impl.MainPresenterImpl;
 import com.xu.topnews.main.presenter.ipresenter.IMainPresenter;
 import com.xu.topnews.main.ui.iview.IMainActivityView;
-import com.xu.topnews.module.newlists.ui.fragment.NewsListFragment;
+import com.xu.topnews.module.headlines.ui.fragment.NewsHeadLinesFragment;
 import com.xu.topnews.module.newspicture.ui.NewsPictureFragment;
 import com.xu.topnews.module.newsvideo.ui.NewsVideoFragment;
 import com.xu.topnews.module.person.ui.PersonFragment;
@@ -101,7 +101,7 @@ public class MainActivity extends XuBaseActivity implements IMainActivityView, V
     @Override
     public void onPageSelected(int position) {
         Fragment fragment = mFragmentLists.get(position);
-        if (fragment instanceof NewsListFragment){
+        if (fragment instanceof NewsHeadLinesFragment){
             mTopNavigationBar.setNavigationTitle(mMainTitle);
         }else if (fragment instanceof NewsVideoFragment){
             mTopNavigationBar.setNavigationTitle(mMainVideoTitle);

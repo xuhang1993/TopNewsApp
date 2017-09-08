@@ -19,8 +19,8 @@ import com.xu.topnews.module.newlists.model.imodel.INewsListModel;
 public class NewsListModelImpl implements INewsListModel{
 
     @Override
-    public void loadDataList(final int index, final int rowsCount, final OnLoadDataListener listener) {
-        XuBaseWebApi.getInstance().getTopNews("headline", "T1348647909107", index, rowsCount, new XuBaseApiCallBack<XuTopNewsApiModel>() {
+    public void loadDataList(String type, String id, int index, int rowsCount, final OnLoadDataListener listener) {
+        XuBaseWebApi.getInstance().getTopNews(type, id, index, rowsCount, new XuBaseApiCallBack<XuTopNewsApiModel>() {
             @Override
             public void loadSuccess(XuTopNewsApiModel data) {
                 listener.loadSuccess(data);
@@ -42,5 +42,4 @@ public class NewsListModelImpl implements INewsListModel{
             }
         });
     }
-
 }

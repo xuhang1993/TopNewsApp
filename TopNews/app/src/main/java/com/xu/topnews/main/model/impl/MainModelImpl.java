@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import com.xu.appbaseui.bottomnavigationbar.navigationbar.XuBaseNavigationTabBar;
 import com.xu.topnews.R;
 import com.xu.topnews.main.model.imodel.IMainModel;
-import com.xu.topnews.module.newlists.ui.fragment.NewsListFragment;
+import com.xu.topnews.module.headlines.ui.fragment.NewsHeadLinesFragment;
 import com.xu.topnews.module.newspicture.ui.NewsPictureFragment;
 import com.xu.topnews.module.newsvideo.ui.NewsVideoFragment;
 import com.xu.topnews.module.person.ui.PersonFragment;
@@ -65,7 +65,7 @@ public class MainModelImpl implements IMainModel {
     @Override
     public List<Fragment> addFragment() {
         List<Fragment> fragmentList = new ArrayList<>();
-        NewsListFragment fragment = new NewsListFragment();
+        NewsHeadLinesFragment fragment = new NewsHeadLinesFragment();
         NewsVideoFragment videoFragment = new NewsVideoFragment();
         NewsPictureFragment pictureFragment = new NewsPictureFragment();
         PersonFragment personFragment = new PersonFragment();
