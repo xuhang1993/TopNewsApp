@@ -70,7 +70,7 @@ public class XuBaseViewPagerLine extends View {
         mPaint.setAntiAlias(true);
         mPaint.setStrokeWidth(5);
         mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setShader(new LinearGradient(0, 100, ScreenUtils.getScreenWidth(), 100, Color.parseColor("#ffc125"), Color.parseColor("#ff4500"), Shader.TileMode.MIRROR));
+        mPaint.setShader(new LinearGradient(0, 200, ScreenUtils.getScreenWidth(), 200, Color.parseColor("#ffc125"), Color.parseColor("#ff4500"), Shader.TileMode.MIRROR));
     }
 
     @Override

@@ -5,7 +5,6 @@ import android.support.multidex.MultiDexApplication;
 import com.xu.appframwork.framworkenum.XuBaseFramWorkEnum;
 import com.xu.appframwork.global.XuBaseGlobalConfiguration;
 import com.xu.appframwork.resourcedefinition.XuBaseResourcedefinition;
-import com.xu.appthird.setting.XuBaseThirdSetting;
 
 /**
  * Created by 16413 on 2017/5/11.
@@ -24,7 +23,7 @@ public class Application extends MultiDexApplication {
 
     private void setConfig(){
         XuBaseGlobalConfiguration.getInstance().configurationThings(XuBaseFramWorkEnum.HttpType.HTTP, APIHOST, XuBaseResourcedefinition.appFilePath(), getApplicationContext());
-        XuBaseThirdSetting.getInstance().thirdSetting(getApplicationContext(), APPID);
+//        XuBaseThirdSetting.getInstance().thirdSetting(getApplicationContext(), APPID);
     }
 
 }

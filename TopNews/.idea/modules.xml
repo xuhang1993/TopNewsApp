@@ -3,19 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TopNews.iml" filepath="$PROJECT_DIR$/TopNews.iml" />
-      <module fileurl="file://D:\AppData\TopNewsApp\TopNews\TopNews.iml" filepath="D:\AppData\TopNewsApp\TopNews\TopNews.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\AppData\TopNewsApp\TopNews\app\app.iml" filepath="D:\AppData\TopNewsApp\TopNews\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/appbaseui/appbaseui.iml" filepath="$PROJECT_DIR$/appbaseui/appbaseui.iml" />
-      <module fileurl="file://D:\AppData\TopNewsApp\TopNews\appbaseui\appbaseui.iml" filepath="D:\AppData\TopNewsApp\TopNews\appbaseui\appbaseui.iml" />
       <module fileurl="file://$PROJECT_DIR$/appcommonutils/appcommonutils.iml" filepath="$PROJECT_DIR$/appcommonutils/appcommonutils.iml" />
-      <module fileurl="file://D:\AppData\TopNewsApp\TopNews\appcommonutils\appcommonutils.iml" filepath="D:\AppData\TopNewsApp\TopNews\appcommonutils\appcommonutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/appframwork/appframwork.iml" filepath="$PROJECT_DIR$/appframwork/appframwork.iml" />
-      <module fileurl="file://D:\AppData\TopNewsApp\TopNews\appframwork\appframwork.iml" filepath="D:\AppData\TopNewsApp\TopNews\appframwork\appframwork.iml" />
       <module fileurl="file://$PROJECT_DIR$/appinterface/appinterface.iml" filepath="$PROJECT_DIR$/appinterface/appinterface.iml" />
-      <module fileurl="file://D:\AppData\TopNewsApp\TopNews\appinterface\appinterface.iml" filepath="D:\AppData\TopNewsApp\TopNews\appinterface\appinterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/appthird/appthird.iml" filepath="$PROJECT_DIR$/appthird/appthird.iml" />
-      <module fileurl="file://D:\AppData\TopNewsApp\TopNews\appthird\appthird.iml" filepath="D:\AppData\TopNewsApp\TopNews\appthird\appthird.iml" />
     </modules>
   </component>
 </project>

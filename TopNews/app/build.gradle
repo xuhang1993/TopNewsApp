@@ -32,7 +32,7 @@ dependencies {
     compile project(':appframwork')
     compile project(':appbaseui')
     compile project(':appcommonutils')
-    compile project(':appthird')
+//    compile project(':appthird')
     /*butterknife*/
     compile 'com.jakewharton:butterknife:8.4.0'
     compile 'com.android.support:support-v4:25.3.1'

@@ -44,9 +44,9 @@ public class XuBaseGlobalConfiguration {
         //配置host
         XuBaseFramWorkConfig.getInstance().setApiTheme(type);
         XuBaseFramWorkConfig.getInstance().setApiHost(host);
-        //创建文件夹
-        FileUtils.createOrExistsDir(path);
         //初始化util
         Utils.init(context);
+        //创建文件夹
+        FileUtils.createOrExistsDir(path);
     }
 }

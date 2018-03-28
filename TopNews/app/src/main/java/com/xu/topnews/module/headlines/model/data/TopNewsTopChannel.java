@@ -5,6 +5,12 @@ package com.xu.topnews.module.headlines.model.data;
  */
 
 public class TopNewsTopChannel {
+
+    public TopNewsTopChannel(String channelName, String channelId) {
+        this.channelName = channelName;
+        this.channelId = channelId;
+    }
+
     /**
      * 频道名称
      */
